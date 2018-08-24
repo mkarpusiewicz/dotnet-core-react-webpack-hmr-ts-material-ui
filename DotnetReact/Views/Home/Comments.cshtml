@@ -1,0 +1,26 @@
+﻿@model IEnumerable<CommentModel>
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <title>ReactJS.NET</title>
+</head>
+<body>
+    <h1>ReactJS.NET demo</h1>
+    @Html.React("CommentBox", new
+    {
+        initialData = Model,
+        url = ViewBag.CommentsUrl,
+        submitUrl = ViewBag.CommentsUrl,
+        pollInterval = 2000,
+    })
+    <script crossorigin src="https://cdn.jsdelivr.net/npm/event-source-polyfill@0.0.15/src/eventsource.min.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/16.4.0/umd/react.development.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.6.0/prop-types.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.min.js"></script>
+    <script src="@Url.Content("~/js/tutorial.jsx")"></script>
+    @Html.ReactInitJavaScript()
+</body>
+</html>

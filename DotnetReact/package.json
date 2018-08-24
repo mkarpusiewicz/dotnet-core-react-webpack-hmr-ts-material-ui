@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --progress --colors",
+    "updates": "ncu"
+  },
+  "-vs-binding": {
+    "BeforeBuild": [
+      "build"
+    ]
+  },
+  "devDependencies": {
+    "@types/material-ui": "^0.21.5",
+    "@types/node": "^10.7.1",
+    "@types/react": "^16.4.11",
+    "@types/react-dom": "^16.0.7",
+    "@types/webpack-env": "^1.13.6",
+    "aspnet-webpack": "^3.0.0",
+    "aspnet-webpack-react": "^3.0.0",
+    "awesome-typescript-loader": "^5.2.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "react-hot-loader": "^4.3.5",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.0.1",
+    "webpack": "^4.17.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-hot-middleware": "^2.22.3"
+  },
+  "dependencies": {
+    "@material-ui/core": "^1.5.1",
+    "@material-ui/icons": "^2.0.3",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}

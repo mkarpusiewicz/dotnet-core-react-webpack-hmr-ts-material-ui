@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "remarkable@1.7.1",
+      "destination": "wwwroot/lib/remarkable/",
+      "files": [
+        "remarkable.min.js"
+      ]
+    }
+  ]
+}
